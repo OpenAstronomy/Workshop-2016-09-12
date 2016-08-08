@@ -52,19 +52,19 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   the pitch.
 -->
 <p>
-  <a href="{{site.swc_site}}">Software Carpentry</a>'s mission
-  is to help scientists and engineers get more research done in less
-  time and with less pain by teaching them basic lab skills for
-  scientific computing.  This hands-on workshop will cover basic
-  concepts and tools, including program design, version control, data
-  management, and task automation.  Participants will be encouraged to
-  help one another and to apply what they have learned to their own
-  research problems.
+    <a href="http://openastronomy.org">OpenAstronomy</a> is a collaboration
+    between many astronomy focused open source projects. Workshops run by
+    OpenAstronomy use the excellent <a href="{{site.swc_site}}">Software
+    Carpentry</a> curriculum for the first two days, which is designed to help
+    scientists and engineers get more research done in less time and with less
+    pain by teaching them basic lab skills for scientific computing. The rest of
+    the workshop is more astronomy and solar physics focused, covering tools
+    specific to doing research in these fields.
 </p>
 <p align="center">
   <em>
     For more information on what we teach and why,
-    please see our paper
+    please see Software Carpentry's paper
     "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>".
   </em>
 </p>
@@ -82,9 +82,8 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
     be presented at the workshop.</strong>
   In the first two days we will cover the all the tools required in modern scientific research.
   The thrid day will be a shorter day with discussions on open source science and contributing to software packges.
-  There will also be the opportunity to present your work, an idea or cool problem in a relaxed environment during a lightning talk session.
   The second two days will be focused on handling astrophysical data sets in Python.
-  The focus will be on SunPy, however the skills learnt here are extremely transferable.
+  The focus will be on SunPy and Astropy, however the skills learnt here are extremely transferable.
 </p>
 
 <!--
@@ -180,10 +179,8 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   <div class="col-md-6">
     <h3>Day 3</h3>
     <table class="table table-striped">
-      <tr> <td>10:00</td>  <td>Open Astronomy</td> </tr>
-      <tr> <td>10:30</td>  <td>Contributing to open source software</td> </tr>
-      <tr> <td>11:00</td>  <td>Tea and Coffee</td> </tr>
-      <tr> <td>11:30</td>  <td>Lightning Talks</td> </tr>
+      <tr> <td>10:00</td>  <td>Open Source in Astronomy</td> </tr>
+      <tr> <td>11:00</td>  <td>Contributing to Open Source Software</td> </tr>
     </table>
   </div>
     <div class="col-md-6">
@@ -629,7 +626,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
     Given that you have installed python using anaconda, we can use the anaconda environment to install SunPy too.
     <ol>
       <li> To install SunPy launch a system command prompt or the ‘Anaconda Command Prompt’ (under Windows).
-      <li> Configure conda for sunpy downloads: <pre> conda config --add channels sunpy --add channels astropy </pre>
+      <li> Configure conda for sunpy downloads: <pre> conda config --add channels conda-forge --add channels astropy </pre>
       <li> Then to install SunPy <pre> conda install sunpy astroquery </pre>
     </ol>
   </p>
