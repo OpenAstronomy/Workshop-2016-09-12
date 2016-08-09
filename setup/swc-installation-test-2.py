@@ -90,22 +90,13 @@ CHECKS = [
     'virtual-browser',
 # Version control
     'git',
-    'hg',              # Command line tool
-    #'mercurial',       # Python package
-    'EasyMercurial',
 # Build tools and packaging
     'make',
     'virtual-pypi-installer',
     'setuptools',
-    #'xcode',
 # Testing
-    'nosetests',       # Command line tool
-    'nose',            # Python package
     'py.test',         # Command line tool
     'pytest',          # Python package
-# SQL
-    'sqlite3',         # Command line tool
-    'sqlite3-python',  # Python package
 # Python
     'python',
     'ipython',         # Command line tool
@@ -115,10 +106,11 @@ CHECKS = [
     'scipy',
     'matplotlib',
     'pandas',
-    #'sympy',
-    #'Cython',
-    #'networkx',
-    #'mayavi.mlab',
+    'sunpy',
+    'astropy',
+    'wcsaxes',
+    'astroquery',
+    'skimage'
     ]
 
 CHECKER = {}
@@ -168,6 +160,11 @@ class DependencyError (Exception):
         ('Darwin', '*', 'matplotlib'): 'http://matplotlib.org/users/installing.html#building-on-osx',
         ('Windows', '*', 'matplotlib'): 'http://matplotlib.org/users/installing.html#installing-on-windows',
         ('*', '*', 'matplotlib'): 'http://matplotlib.org/users/installing.html#installing',
+        ('*', '*', 'sunpy'): 'http://docs.sunpy.org/en/stable/guide/installation/',
+        ('*', '*', 'astropy'): 'http://docs.astropy.org/en/stable/install.html',
+        ('*', '*', 'astroquery'): 'https://astroquery.readthedocs.io/en/latest/#installation',
+        ('*', '*', 'skimage'): 'http://scikit-image.org/docs/dev/install.html',
+        ('*', '*', 'wcsaxes'): 'http://wcsaxes.readthedocs.io/en/latest/installation.html',
         ('*', '*', 'mayavi.mlab'): 'http://docs.enthought.com/mayavi/mayavi/installation.html',
         ('*', '*', 'nano'): 'http://www.nano-editor.org/dist/latest/faq.html#3',
         ('*', '*', 'networkx'): 'http://networkx.github.com/documentation/latest/install.html#installing',
@@ -882,6 +879,11 @@ for package,name,long_name,minimum_version,and_dependencies in [
         ('argparse', None, 'Argparse', None, None),
         ('numpy', None, 'NumPy', None, None),
         ('scipy', None, 'SciPy', None, None),
+        ('sunpy', None, 'SunPy', None, None),
+        ('astropy', None, 'Astropy', None, None),
+        ('wcsaxes', None, 'wcsaxes', None, None),
+        ('astroquery', None, 'astroquery', None, None),
+        ('skimage', None, 'Scikit Image', None, None),
         ('matplotlib', None, 'Matplotlib', None, None),
         ('pandas', None, 'Pandas', (0, 8), None),
         ('sympy', None, 'SymPy', None, None),
